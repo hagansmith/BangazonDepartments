@@ -36,6 +36,7 @@ namespace BangazonDepartments
             }
 
             hr.AddPolicy("T-1-23-B-12", "The policy on policies");
+            var computers = it.AddComputer(3);
 
             var policies = hr.GetPolicies();
 
@@ -43,6 +44,8 @@ namespace BangazonDepartments
             {
                 Console.WriteLine($"{policy.Key} - {policy.Value}");
             }
+
+            Console.WriteLine($"There are {computers} computers at Bangazon");
 
             Console.ReadLine();
         }
